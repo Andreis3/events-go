@@ -1,8 +1,10 @@
 package events
 
+import "time"
+
 type EventInterface interface {
 	GetName() string
-	GetDateTime() string
+	GetDateTime() time.Time
 	GetPayload() any
 }
 
